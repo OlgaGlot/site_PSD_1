@@ -175,7 +175,7 @@
 
                 <h3 class="h3">Lorem ipsum dolor sit amet event landing template</h3>
 
-                <div class="our_services_grid">
+                <div class="our_services_grid" id="our_services_grid">
                     <div class="item_1">
                         <div class="item_1_container">
                             <h4>Designing is The CooL LOVE FOR.</h4>
@@ -503,6 +503,8 @@
         let our_services_item1 = document.querySelector('.item_1');
         our_services_item1.onclick = () => {
             our_services_item1.remove();
+            let our_services_grid_items = document.getElementById('our_services_grid');
+            our_services_grid_items.classList.toggle('our_services_grid_moving');
             let item_2 = document.getElementById('item_2');
             item_2.classList.toggle('item_2_moving');
             let item_3 = document.getElementById('item_3');
