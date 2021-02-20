@@ -503,7 +503,8 @@
         })();
 
         let our_services_item1 = document.querySelector('.item_1');
-        our_services_item1.onclick = () => {
+        let our_services_item1_close_btn = document.querySelector('.close_btn');
+        our_services_item1_close_btn.onclick = () => {
             our_services_item1.remove();
             let our_services_grid_items = document.getElementById('our_services_grid');
             our_services_grid_items.classList.toggle('our_services_grid_moving');
