@@ -493,14 +493,11 @@
     <script type="text/javascript">
         "use strict";
         
-        (function() {
-            var button = document.getElementById('btn_menu');
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
-                var menu = document.getElementById('main_menu');
-                menu.classList.toggle('is_open');
-            });
-        })();
+        var button = document.getElementById('btn_menu');
+        button.addEventListener('click', function(event) {
+            var menu = document.getElementById('main_menu');
+            menu.classList.toggle('is_open');
+        });
 
         let our_services_item1 = document.querySelector('.item_1');
         let our_services_item1_close_btn = document.querySelector('.close_btn');
